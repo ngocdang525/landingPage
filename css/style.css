@@ -1,0 +1,76 @@
+/*********************
+  Mixins
+**********************/
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+.top__left {
+  flex: 1;
+  position: relative;
+}
+.top__left .logo {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 40px;
+}
+.top__left--content {
+  padding: 20%;
+}
+.top__left button {
+  background: darkred;
+  color: white;
+  border: none;
+  padding: 15px;
+}
+.top__right {
+  background: darkred;
+  flex-basis: 40%;
+}
+.top__right nav {
+  float: right;
+}
+.top__right li {
+  display: inline;
+  align-items: center;
+  margin-right: 10px;
+}
+.top__right li a {
+  text-decoration: none;
+  color: white;
+}
+.top__right li a:hover {
+  color: yellow;
+}
+.top__right img {
+  max-width: 100%;
+}
+
+footer {
+  background: darkred;
+  color: white;
+  display: flex;
+  flex: 1;
+}
+footer .info {
+  padding: 5% 12%;
+}
+footer .btn {
+  flex-basis: 50%;
+  margin-top: 10%;
+  color: white;
+}
+footer .btn button {
+  background: rgba(198, 127, 127, 0.789);
+  color: white;
+  border: none;
+}
